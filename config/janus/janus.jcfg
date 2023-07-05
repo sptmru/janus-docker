@@ -275,7 +275,7 @@ nat: {
 	# statically configured TURN server, and thus provide the address of the
 	# TURN server, the transport (udp/tcp/tls) to use, and a set of valid
 	# credentials to authenticate...
-	turn_server = turn02.hubl.in
+	turn_server = turn02.hubl.in?transport=tcp
 	turn_port = 3478
 	turn_type = "tcp"
 	turn_user = "webrtc"
@@ -309,7 +309,7 @@ nat: {
 	#     ice_enforce_list = "eth0,192.168."
 	#     ice_enforce_list = "eth0,192.168.0.1"
 	# By default, no interface is enforced, meaning Janus will try to use them all.
-	# ice_enforce_list = "82.146.32.165"
+	ice_enforce_list = "ens3,docker0"
 
 	# In case you don't want to specify specific interfaces to use, but would
 	# rather tell Janus to use all the available interfaces except some that
