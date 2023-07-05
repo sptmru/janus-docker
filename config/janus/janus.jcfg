@@ -275,7 +275,7 @@ nat: {
 	# statically configured TURN server, and thus provide the address of the
 	# TURN server, the transport (udp/tcp/tls) to use, and a set of valid
 	# credentials to authenticate...
-	turn_server = turn02.hubl.in?transport=tcp
+	turn_server = turn02.hubl.in
 	turn_port = 3478
 	turn_type = "tcp"
 	# turn_user = "webrtc"
