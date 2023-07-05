@@ -60,10 +60,10 @@ room-1234: {
 	description = "Demo Room"
 	secret = "adminpwd"
 	publishers = 6
-	bitrate = 128000000	# This is a low cap, increase if you want to use simulcast or SVC
+	bitrate = 256000	# This is a low cap, increase if you want to use simulcast or SVC
 	fir_freq = 10
-	audiocodec = "opus"
-	videocodec = "vp9"
+	# audiocodec = "opus"
+	# videocodec = "vp9"
 	record = false
 	#rec_dir = "/path/to/recordings-folder"
 }
