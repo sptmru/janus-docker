@@ -278,8 +278,8 @@ nat: {
 	turn_server = turn02.hubl.in
 	turn_port = 3478
 	turn_type = "tcp"
-	# turn_user = "webrtc"
-	# turn_pwd = "webrtc"
+	turn_user = "webrtc"
+	turn_pwd = "webrtc"
 
 	# ... or you can make use of the TURN REST API to get info on one or more
 	# TURN services dynamically. This makes use of the proposed standard of
