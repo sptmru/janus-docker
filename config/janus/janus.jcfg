@@ -25,23 +25,23 @@ general: {
 											# started, and to destroy at shutdown
 
 		# There are different ways you can authenticate the Janus and Admin APIs
-	api_secret = "c578ab0d-14e8-42a2-b0d8-8a8189ef078d"		# String that all Janus requests must contain
+	# api_secret = "c578ab0d-14e8-42a2-b0d8-8a8189ef078d"		# String that all Janus requests must contain
 									# to be accepted/authorized by the Janus core.
 									# Useful if you're wrapping all Janus API requests
 									# in your servers (that is, not in the browser,
 									# where you do the things your way) and you
 									# don't want other application to mess with
 									# this Janus instance.
-	token_auth = true				# Enable a token based authentication
+	token_auth = false				# Enable a token based authentication
 									# mechanism to force users to always provide
 									# a valid token in all requests. Useful if
 									# you want to authenticate requests from web
 									# users.
-	token_auth_secret = "12e6dcf2-219f-4591-b8f6-c87ee26c5f35"	# Use HMAC-SHA1 signed tokens (with token_auth). Note that
+	# token_auth_secret = "12e6dcf2-219f-4591-b8f6-c87ee26c5f35"	# Use HMAC-SHA1 signed tokens (with token_auth). Note that
 									# without this, the Admin API MUST
 									# be enabled, as tokens are added and removed
 									# through messages sent there.
-	admin_secret = "defe381d-9aa6-43ec-89fe-ae7c0ba56dca"	# String that all Janus requests must contain
+	# admin_secret = "defe381d-9aa6-43ec-89fe-ae7c0ba56dca"	# String that all Janus requests must contain
 									# to be accepted/authorized by the admin/monitor.
 									# only needed if you enabled the admin API
 									# in any of the available transports.
